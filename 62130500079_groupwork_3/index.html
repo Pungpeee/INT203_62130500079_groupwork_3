@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Basic Vue Js - HelloWorld App</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container mt-5 flex justify-center">
+            <div class="card p-3 shadow-2xl">
+                <h1 class="text-xl font-semibold">˚꒰༘ * My photo gallery ({{countimage}}) ˚◡̎💝</h1>
+
+                <div v-for="(image,index) in tasks">
+
+                    <div class="flex">  
+                        <img v-on:click="toggleDone(index)" v-bind:src="image.picture" class="zoom ้column mr-24 rounded my-8"
+                            style="width:35%;">
+                        <p class="flex items-center"> {{image.description}} </p>
+
+                    </div>
+                    <img v-show="image.done" src="./images/heart.png" style="width:30px">
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- my main.js -->
+
+    <script src="./main.js"></script>
+</body>
+ื
+
+</html>

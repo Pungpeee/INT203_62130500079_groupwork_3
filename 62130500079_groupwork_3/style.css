@@ -1,0 +1,21 @@
+body {
+    background-color: #EABFB9;
+    border-radius: 10px
+}
+
+.card {
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+.zoom {
+    transition: transform .2s;
+    
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+  }
